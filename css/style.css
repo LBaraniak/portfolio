@@ -1,21 +1,52 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,700|Raleway:400,700,800,900");
+.font-oswald, body {
+  font-family: 'Oswald', sans-serif; }
+
+.font-raleway, nav, .hero .gray .junior-anim {
+  font-family: 'Raleway', sans-serif; }
+
+.gal-property, .hero {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
 * {
-	margin: 0;
-	box-sizing: border-box;
-}
+  margin: 0;
+  box-sizing: border-box; }
 
 body {
-	margin-top: 20px;
-	border: 30px solid #653366;
-}
+  margin-top: 20px;
+  border: 30px solid #653366; }
+
+section,
+header {
+  width: 100%;
+  height: calc(100vh - 50px); }
+
+nav {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px; }
+
+.hero {
+  background-image: url("https://cdn.pixabay.com/photo/2015/02/24/02/05/website-647013_960_720.jpg"); }
+  .hero .gray {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); }
+    .hero .gray .junior-anim {
+      font-size: 7em;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 35vh;
+      color: #fff; }
 
 .navbar-inverse {
-	background-color: #653366;
-	border: none;
-}
-
+  background-color: #653366;
+  border: none; }
 
 .wrap {
-	width: 100%;
-	height: 2000px;
-	display: block;
-}
+  width: 100%;
+  height: 2000px;
+  display: block; }
+
+/*# sourceMappingURL=style.css.map */

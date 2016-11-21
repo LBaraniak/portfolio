@@ -1,0 +1,27 @@
+{
+  "name": "lb_portfolio",
+  "version": "1.0.0",
+  "description": "my first portfolio",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LBaraniak/portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Łukasz Baraniak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LBaraniak/portfolio/issues"
+  },
+  "homepage": "https://github.com/LBaraniak/portfolio#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.1"
+  }
+}
