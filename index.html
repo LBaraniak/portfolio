@@ -7,13 +7,8 @@
 		<title>Łukasz Baraniak - Junior Front-End Developer</title>
 		<meta name="author" content="Łukasz Baraniak">
 		
-		
-
-		
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-		
-		
 		<link href="css/style.css" rel="stylesheet">
 		
 		<script src="js/jquery.min.js"></script>		 
@@ -28,8 +23,7 @@
    		
    		<script>
 		$(document).ready(function() { 
- 
-			 $('a[href^="#"]').on('click', function(event) {
+ 			 $('a[href^="#"]').on('click', function(event) {
 			 
 				 var target = $( $(this).attr('href') );
 				 
@@ -40,13 +34,8 @@
 					 }, 1000);
 				 }
 				 });
-			 
 			});
 		</script>
-		
-   		
-		
-		
 	</head>
 	<body>
 		
@@ -65,21 +54,44 @@
 			</div>
 		</header>
 		<section class="about" id="about">
-			
-			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 about-head"></div>
+					<div class="col-md-6 about-content"></div>
+				</div>
+			</div>
 		</section>
 		<section class="skill" id="skill">
-			
-			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 skill-head"></div>
+					<div class="col-md-6 skill-content"></div>
+				</div>
+			</div>
 		</section>
 		<section class="portfolio" id="portfolio">
-			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 portfolio-head"></div>
+					<div class="col-md-6 portfolio-content"></div>
+				</div>
+			</div>
 		</section>
 		<section class="contact" id="contact">
-			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 contact-head"></div>
+					<div class="col-md-6 contact-content"></div>
+				</div>
+			</div>
 		</section>
 		<footer>
-			Łukasz Baraniak || 2016
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12 footer-content text-center">Łukasz Baraniak || 2016</div>
+				</div>
+			</div>
+			
 		</footer>
 		<script>
 			window.sr = ScrollReveal().reveal('.junior-anim', {

@@ -2,7 +2,7 @@
 .font-oswald, body {
   font-family: 'Oswald', sans-serif; }
 
-.font-raleway {
+.font-raleway, .hero .gray .junior-anim {
   font-family: 'Raleway', sans-serif; }
 
 .gal-property, .hero {
@@ -15,7 +15,13 @@
   box-sizing: border-box; }
 
 body {
-  border: 20px solid #653366; }
+  background-color: inherit;
+  background-position: 50% 47%;
+  background-size: 300%;
+  background-image: -webkit-linear-gradient(65deg, #eee 50%, transparent 50%);
+  background-image: -moz-linear-gradient(65deg, #eee 50%, transparent 50%);
+  background-image: -o-linear-gradient(65deg, #eee 50%, transparent 50%);
+  background-image: linear-gradient(65deg, #eee 50%, transparent 50%); }
 
 section,
 header {
@@ -23,14 +29,51 @@ header {
   height: 100vh; }
 
 .hero {
-  background-image: url("https://cdn.pixabay.com/photo/2015/02/24/02/05/website-647013_960_720.jpg"); }
+  background-image: url("/img/hero-bg.jpg"); }
   .hero .gray {
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9); }
+    background-color: rgba(0, 0, 0, 0.8); }
     .hero .gray .junior-anim {
       font-size: 4em;
       text-align: center;
       margin-top: 25vh;
       color: #fff; }
+
+.about-head,
+.about-content,
+.skill-head,
+.skill-content,
+.portfolio-head,
+.portfolio-content,
+.contact-head,
+.contact-content {
+  height: 100vh; }
+
+.about-head {
+  background-color: rgba(36, 63, 104, 0.6); }
+
+.about-content {
+  background-color: rgba(36, 63, 104, 0.4); }
+
+.skill-head {
+  background-color: rgba(199, 195, 100, 0.4); }
+
+.skill-content {
+  background-color: rgba(199, 195, 100, 0.6); }
+
+.portfolio-head {
+  background-color: rgba(86, 136, 147, 0.6); }
+
+.portfolio-content {
+  background-color: rgba(86, 136, 147, 0.4); }
+
+.contact-head {
+  background-color: rgba(51, 21, 74, 0.4); }
+
+.contact-content {
+  background-color: rgba(51, 21, 74, 0.6); }
+
+.footer-content {
+  background-color: #A5D7BF; }
 
 /*# sourceMappingURL=style.css.map */
