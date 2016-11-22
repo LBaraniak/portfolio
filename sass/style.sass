@@ -27,9 +27,9 @@ body
   
   @extend .font-oswald
   background-color: inherit
-  background-position: 50% 47%
+  background-position: 46% 47%
   background-size: 300%
-  +gradient(65deg, #eee 50%, transparent 50%)
+  +gradient(66deg, #eee 50%, transparent 50%)
 section,
 header
   width: 100%
@@ -37,17 +37,24 @@ header
 
 .hero
   @extend .gal-property
-  background-image: url("/img/hero-bg.jpg")
-  .gray 
-    height: 100%
-    background-color: rgba(0, 0, 0, 0.8)
-    .junior-anim
-      @extend .font-raleway
-      font-size: 4em
-      text-align: center
-      margin-top: 25vh
-      color: #fff
-
+  //background-image: url("/img/hero-bg.jpg")
+  position: relative
+  display: block
+  width: 100%
+    
+  .lb-face
+    position: absolute
+    display: block
+    top: calc(50vh - 200px)
+    left: calc(50vw - 110px)
+    height: 200px
+    width: 200px
+    border-radius: 50%
+    box-shadow: 0 0 20px #333
+    
+      
+.hero-head,
+.hero-content,
 .about-head,
 .about-content,
 .skill-head,
@@ -58,14 +65,19 @@ header
 .contact-content
   height: 100vh
 
+
+.hero-head
+  background-color: rgba(100, 100, 100, 0.6)
+.hero-content
+  background-color: rgba(100, 100, 100, 0.4)
 .about-head
   background-color: rgba(36, 63, 104, 0.6)
 .about-content
   background-color: rgba(36, 63, 104, 0.4)
 .skill-head
-  background-color: rgba(199, 195, 100, 0.4)
+  background-color: rgba(208, 169, 96, 0.6)
 .skill-content
-  background-color: rgba(199, 195, 100, 0.6)
+  background-color: rgba(208, 169, 96, 0.8)
 .portfolio-head
   background-color: rgba(86, 136, 147, 0.6)
 .portfolio-content
@@ -76,7 +88,7 @@ header
   background-color: rgba(51, 21, 74, 0.6)
   
 .footer-content
-  background-color: #A5D7BF
+  background-color: #EBD1B7
 
 
 
