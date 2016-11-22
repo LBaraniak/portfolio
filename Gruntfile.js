@@ -13,18 +13,33 @@ module.exports = function(grunt) {
       }
     },
 	watch: {
-    scripts: {
-        files: ['sass/*.sass'],
-        tasks: ['sass'],
-        options: {
-            spawn: false,
-        },
-    } 
-}
+		scripts: {
+			files: ['sass/*.sass'],
+			tasks: ['sass'],
+			options: {
+				spawn: false,
+			},
+		} 
+	},
+	browserSync: {
+            dev: {
+                bsFiles: {
+                    src : [
+                        'css/*.css',
+                        '*.html'
+                    ]
+                },
+                options: {
+                    watchTask: true,
+                    server: '.'
+                }
+            }
+        }
   });
   // Load the plugins tasks 
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-browser-sync');
   // Default task(s).
-  grunt.registerTask('default', ['sass', 'watch']);
+  grunt.registerTask('default', ['browserSync', 'sass', 'watch']);
 };
